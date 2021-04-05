@@ -1,6 +1,6 @@
 # Elon Musk Chat Bot
 ## Updates For The Individual Project
-Since Assignment 2 we have added new features and also enhanced some quality of life features to our chatbot. 
+Since Assignment 3 I have added new features and also enhanced some quality of life features to our chatbot. 
 Additions include:
 -We added the ability to use the Wolfram Alpha API so we can make queries to get a answer when our bot does not have an appropriate response.
 
