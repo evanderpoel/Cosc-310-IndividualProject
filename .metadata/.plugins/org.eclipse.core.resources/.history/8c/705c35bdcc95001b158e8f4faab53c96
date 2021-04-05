@@ -1,0 +1,17 @@
+import com.wolfram.alpha.WAEngine;
+import com.wolfram.alpha.WAException;
+import com.wolfram.alpha.WAPlainText;
+import com.wolfram.alpha.WAPod;
+import com.wolfram.alpha.WAQuery;
+import com.wolfram.alpha.WAQueryResult;
+import com.wolfram.alpha.WASubpod;
+public class Wolfram {
+
+	private static String appid="XXXX";
+	
+	public Wolfram(String input ) {
+		WAEngine engine= new WAEngine();
+	}
+	
+	
+}

@@ -1,0 +1,7 @@
+public class main {
+	public static void main(String[] args) {
+		//new Window();
+		Wolfram wolfram= new Wolfram("How many people live in Canada");
+		System.out.println(wolfram.Result);
+	}
+}
