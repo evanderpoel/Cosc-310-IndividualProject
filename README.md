@@ -172,7 +172,7 @@ To help our bot so it is able to respond when he does not know the appropriate s
 
 From this image we are able to see that we can still get a normal response when you ask our bot something he already understands. Then when you ask something out of our bots scope it will send a query to the API and print the result. If the API does not have a result it will print the normal default responses we implemented for default cases.
 
-![310](https://user-images.githubusercontent.com/75397522/113606185-832d1880-95fc-11eb-8904-415d87f1730f.PNG)
+![310Wolf](https://user-images.githubusercontent.com/75397522/114328267-e7fedc00-9af0-11eb-8c40-66b511d7e9f5.PNG)
 
 ***Figure 19:*** Class made for the Wolfram Alpha API
 
@@ -190,7 +190,7 @@ To have our bot understand many languages and send responses in these languages 
 
 From this image we are able to see that we can have a normal conversation in English than at any point switch to a different language and our bot will respond with the appropriate response in that language. As well if the subject matter is outside the scope of our bot it can still make queries to our Wolfram Alpha API and returns its result in the appropriate language. 
 
-![310](https://user-images.githubusercontent.com/75397522/113606185-832d1880-95fc-11eb-8904-415d87f1730f.PNG)
+![310Goog](https://user-images.githubusercontent.com/75397522/114328276-ee8d5380-9af0-11eb-8d68-dc6b16455be5.PNG)
 
-***Figure 19:*** Class made for the Wolfram Alpha API
+***Figure 19:*** Class made for the Google Translate API
 
