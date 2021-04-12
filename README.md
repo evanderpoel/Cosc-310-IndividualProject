@@ -2,7 +2,8 @@
 ## Updates For The Individual Project
 Since Assignment 3 I have added new features and also enhanced some quality of life features to our chatbot. 
 Additions include:
--We added the ability to use the Wolfram Alpha API so we can make queries to get a answer when our bot does not have an appropriate response.
+- We added the ability to use the Wolfram Alpha API so we can make queries to get a answer when our bot does not have an appropriate response.
+- We added the ability to use the Google Translate API so the bot can understand multiple languages and respond back in the appropriate language.
 
 ---------------------------------------
 
@@ -17,7 +18,9 @@ Additions include:
 - To be able to run our code you will need to download the stanford core nlp toolkit and put it in the class path of the project. We had to do this because of limiting space on github.
 - The same goes for Junit testing
 - You also have to include these jars to get the Wolfram API functioning: WolframAlpha-1.1.jar, commons-codec-1.3.jar, httpclient-4.0.1.jar, httpcore-4.0.1.jar, commons-logging.jar.
-- To compile and run this code clone the repository then you will have a jar file that you can run to open up our application. 
+- You will require the Google cloud library so you can run the google translate API.
+- To compile and run this code clone the repository then you will have a jar file that you can run to open up our application.
+- It will require the API keys, which can be given upon request. 
 
 ---------------------------------------
 
