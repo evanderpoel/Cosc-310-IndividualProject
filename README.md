@@ -175,3 +175,22 @@ From this image we are able to see that we can still get a normal response when 
 ![310](https://user-images.githubusercontent.com/75397522/113606185-832d1880-95fc-11eb-8904-415d87f1730f.PNG)
 
 ***Figure 19:*** Class made for the Wolfram Alpha API
+
+---------------------------------------
+
+## Google Translate API
+
+---------------------------------------
+
+To have our bot understand many languages and send responses in these languages I implemented Google Translates API.
+
+![310](https://user-images.githubusercontent.com/75397522/114328128-79ba1980-9af0-11eb-9210-1028b3023699.PNG)
+
+***Figure 18:*** Sample chat output for Google Translate API
+
+From this image we are able to see that we can have a normal conversation in English than at any point switch to a different language and our bot will respond with the appropriate response in that language. As well if the subject matter is outside the scope of our bot it can still make queries to our Wolfram Alpha API and returns its result in the appropriate language. 
+
+![310](https://user-images.githubusercontent.com/75397522/113606185-832d1880-95fc-11eb-8904-415d87f1730f.PNG)
+
+***Figure 19:*** Class made for the Wolfram Alpha API
+
