@@ -89,7 +89,7 @@ The purpose of this method is to take a string and add it to the main conversati
 The main purpose of this method is to split the message string into an array of its individual words. It will then check the words contained in this array to grab the correct bot response from the response 2d array shown above. Then we check if the question boolean value was true and we generate a random number to check if it equals a specified number and if both cases are true our bot will tell the user that their question was a good question. If the user sent ‘q’ we sent a message saying that the chat has ended.
 
 ---------------------------------------
-# Implementations
+# Implementations (Part of Assignment 3)
 ---------------------------------------
 
 ## Named Entity Recognition (*Stanford toolkit*)
@@ -160,6 +160,10 @@ Client can converse with Elon normally, typing input in the console and receivin
 ![image](https://user-images.githubusercontent.com/75397522/112515860-e80e8600-8d53-11eb-98b9-01b70a5f2d8f.png)
 
 ***Figure 17:*** Server Side Socket Code
+
+---------------------------------------
+
+# Individual Project
 
 ---------------------------------------
 
