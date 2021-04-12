@@ -1,0 +1,14 @@
+import com.google.cloud.translate.*;
+public class main {
+	public static void main(String[] args) {
+		//new Window();
+		String APIKey="AIzaSyDdKN3oTTxgMiqdE1WvkRdUUJwzRCsdM64";
+		
+		
+		
+		Translate translate = TranslateOptions.newBuilder().setApiKey("APIKey").build().getService();
+
+		Translation translation = translate.translate("¡Hola Mundo!");
+		System.out.printf("Translated Text:\n\t%s\n", translation.getTranslatedText());
+	}
+}

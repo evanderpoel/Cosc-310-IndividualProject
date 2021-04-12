@@ -48,6 +48,8 @@ public class Window extends JFrame implements KeyListener{
 	Pipeline pipeline;
 	Wolfram wolfram;
 	List<Object[]> temp = CoRef("");
+	
+	GoogleTranslate gt= new GoogleTranslate();
 
 
 
@@ -165,7 +167,7 @@ public class Window extends JFrame implements KeyListener{
 		setVisible(true);
 		//Calling the addText method to add text to the text ares
 		addText("\t\t\tPlease type Q to end the conversation\n" );
-		addText("I have recently gained the ability to ask my friend wolfram if you ask me something out of my subject range. \nIf this happens I may take a few seconds to give him a call and get back to you.\n\n");
+		addText("I have recently gained the ability to ask my friend wolfram if you ask me something out of my subject range. \nIf this happens I may take a few seconds to give him a call and get back to you.\nI also have the ability to speak multiple languages.\n");
 
 
 	}
@@ -186,8 +188,13 @@ public class Window extends JFrame implements KeyListener{
 			String msg=input.getText();
 			//set the input field to empty
 			input.setText("");
+			
+
 			//Call the method that adds the text to the text are
 			addText("\n-->You:\t"+msg+"\n");
+			//if the users message is not english translate
+			gt.DetectAndTranslate(msg);
+			msg=gt.Result;
 
 			//Check to see if the input is a question.
 			Boolean question;
@@ -233,10 +240,12 @@ public class Window extends JFrame implements KeyListener{
 
 	//The method that will get the bots response
 	public String response(String s, Boolean question) {
+		
 		int Sentiment= analyse(s);
 		int r,c;
 		String initMsg = assist(s);
 		String response = "";
+		
 
 		initMsg=initMsg.trim();
 
@@ -262,6 +271,9 @@ public class Window extends JFrame implements KeyListener{
 			List<String> sent = Arrays.asList(msg.split(" "));
 			//A string list of all the named entities detected by corenlp
 			List<String> namedEntities = getNameEntityList(s);
+			
+	
+			
 			addText("\n-->Elon:\t");
 			
 			if(Sentiment==1) {
@@ -571,7 +583,9 @@ public class Window extends JFrame implements KeyListener{
 			Wolfram wolfram= new Wolfram(s);
 			String result=wolfram.Result;
 			if(!result.equalsIgnoreCase("Null")) {
-				addText(result);
+				gt.DetectAndTranslate(result);
+				addText(gt.Result);
+				gt.count=0;
 				r=13;
 				c=0;
 			}else {
@@ -592,6 +606,13 @@ public class Window extends JFrame implements KeyListener{
 		
 		
 		response = Responses[r][c];
+		
+		//check if the response needs a translation
+		gt.DetectAndTranslate(response);
+		response=gt.Result;
+		//reset count so it is the users turn
+		gt.count=0;
+			
 		//add the response to the text Area
 		addText(response + "\n");
 		

@@ -1,0 +1,14 @@
+import com.google.cloud.translate.*;
+public class GoogleTranslate {
+	
+	Translate translate = TranslateOptions.newBuilder().setApiKey("AIzaSyDdKN3oTTxgMiqdE1WvkRdUUJwzRCsdM64").build().getService();
+	String Result="Null";
+	
+	
+	public GoogleTranslate(String input) {
+		Translation translation = translate.translate("¡Hola Mundo!");
+		System.out.printf("Translated Text:\n\t%s\n", translation.getTranslatedText());
+		
+	}
+	
+}

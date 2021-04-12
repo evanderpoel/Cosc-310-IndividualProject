@@ -1,0 +1,7 @@
+public class main {
+	public static void main(String[] args) {
+		//new Window();
+		GoogleTranslate gt=new GoogleTranslate();
+		gt.DetectAndTranslate("Hello World");
+	}
+}

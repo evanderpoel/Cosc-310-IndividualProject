@@ -1,0 +1,18 @@
+import com.google.cloud.translate.*;
+public class GoogleTranslate {
+	
+	Translate translate = TranslateOptions.newBuilder().setApiKey("AIzaSyDdKN3oTTxgMiqdE1WvkRdUUJwzRCsdM64").build().getService();
+	String Result="Null";
+	String lan="Null";
+	
+	
+	public GoogleTranslate(String input) {
+		Detection detection= translate.detect(input);
+		System.out.println(detection);
+		//Translation translation = translate.translate(input);
+		//System.out.printf("Translated Text:\n\t%s\n", translation.getTranslatedText());
+		//Result=translation.getTranslatedText();
+		
+	}
+	
+}

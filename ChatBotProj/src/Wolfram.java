@@ -8,7 +8,7 @@ import com.wolfram.alpha.WASubpod;
 
 public class Wolfram {
 
-	private static String appid="RW7EA5-7YL2EQK3YW";
+	private static String appid="";
 	public String Result="Null";
 	
 	public Wolfram(String input ) {
